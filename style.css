@@ -1,0 +1,136 @@
+body{
+    color: #100c0c;
+    background-color: #fafaea;
+    margin: 0;
+    padding: 0;
+}
+.nav-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d5b3ff;
+    /* padding: 15px; */
+}
+
+.nav-body img {
+    width: 25px;
+    height: 15px;
+}
+ul li{
+    display: inline;
+    text-decoration: none;
+    padding: 25px 15px;
+}
+.nav-body ul li a{
+    text-decoration: none;
+    color: #100c0c;
+    font-weight: bold;
+}
+.nav-body ul li .orange{
+    color: #ff764d;
+}
+.nav-body ul li .blue {
+    color: #0000EE;
+}
+.nav-main ul li a {
+    text-decoration: none;
+    color: #100c0c;
+    font-weight: bold;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin: 1em 6em;
+}
+.banner h1{
+    color: #ff764d;
+    font-size: 8em;
+    grid-area: 1/1/1/1;
+    justify-self: center;
+    align-self: center;
+}
+.banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    grid-area: 1/1/1/1;
+} 
+
+.bold-p{
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 2em;
+    grid-area: 1/2/1/2;
+} 
+.img-yellow{
+    display: grid;
+    grid-template-columns: 50fr 50fr 70fr;
+}
+.img-yellow .div-right{
+    background-color: #fbffa7;
+    padding: 150px 40px 150px 300px;
+    grid-area: 1/2/1/4;
+}
+
+.img-yellow .img-right{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.img-yellow .img-left{
+    object-fit:cover;
+    width: 50%;
+    height: 80%;
+    grid-area: 1/1/1/3;
+    padding: 60px 200px 100px 96px;
+}
+
+
+.texts article {
+    padding: 20px 300px;
+    margin-bottom: 30px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.img-green {
+    display: grid;
+    grid-template-columns: 50fr 50fr 50fr 50fr;
+    grid-template-rows: 100fr 100fr;
+    align-items: center;
+}
+
+.img-green .img-right {
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    padding-left: 200px;
+    grid-area: 1/2/3/5;
+    
+}
+.img-green .div-left {
+    background-color: #b6ffc0;
+    grid-area: 1/1/3/3;
+    padding: 60px 200px 60px 96px;
+    display: grid;
+    grid-template-rows: 100fr 100fr ;
+    gap: 4em;
+}
+.img-green .div-left .img-left-2 {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    grid-area: 1/1/2/1;
+    
+}
+.img-green .div-left .img-left {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    grid-area: 2/1/3/1;
+}
+
