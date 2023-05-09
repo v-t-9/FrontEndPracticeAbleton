@@ -14,6 +14,7 @@ body{
 .nav-body .nav-left{
     padding: 0;
 }
+
 .logo {
     width: 25px;
     height: 15px;
@@ -88,24 +89,27 @@ main .nav-main ul li a {
 .img-yellow{
     display: grid;
     grid-template-columns: 50fr 50fr 70fr;
+    position: relative;
 }
 .img-yellow .div-right{
     background-color: #fbffa7;
-    padding: 150px 40px 150px 300px;
+    padding: 150px 0px 150px 300px;
     grid-area: 1/2/1/4;
 }
 
-.img-yellow .img-right{
-    object-fit: cover;
+.img-yellow .div-right .img-right{
+    object-fit:contain;
     width: 100%;
     height: 100%;
 }
 .img-yellow .img-left{
-    object-fit:cover;
-    width: 50%;
-    height: 80%;
+    object-fit:contain;
+    width: 30vw;
+    height: 100%;
     grid-area: 1/1/1/3;
-    padding: 60px 200px 100px 96px;
+    /* padding: 60px 200px 100px 96px; */
+    position: absolute;
+    left: 96px;
 }
 
 
@@ -128,16 +132,17 @@ main .nav-main ul li a {
     grid-template-rows: 100fr;
     align-items: center;
     gap: 6em;
+    position: relative;
 }
     
 .img-green .img-green-right {
      object-fit: cover;
-     width: 60%;
-     height: 60%;
+     height: 60vh;
      grid-area: 1/1/1/3;
-     padding-left: 500px;
-     margin-right:64px;
-    
+    /* margin-right:64px; */
+     position: absolute;
+     right: 150px;
+     left:460px;
 }
     
 .img-green .div-green-left {
@@ -147,6 +152,7 @@ main .nav-main ul li a {
     display: grid;
     grid-template-rows: 100fr 100fr;
     gap: 2em;
+    
 }
 
 .img-green .div-green-left .img-green-left-2 {
@@ -154,7 +160,6 @@ main .nav-main ul li a {
     width: 100%;
     height: 100%;
     grid-area: 1/1/2/1;
-
 }
 
 .img-green .div-green-left .img-green-left {
@@ -162,13 +167,16 @@ main .nav-main ul li a {
     width: 100%;
     height: 100%;
     grid-area: 2/1/3/1;
+
 }
 .img-violet{
     display: grid;
     grid-template-columns: 50fr 50fr 50fr 50fr;
     grid-template-rows: 50fr 50fr;
-    gap: 4em;
+    column-gap: 4em;
+    row-gap: 2em;
     align-items: center;
+
 }
 .img-violet .div-violet{
     background-color: #d5b3ff;
@@ -248,7 +256,7 @@ footer .newsletter form input[type=text]{
     padding: 5px 2px;
     background-color: #eaeae2;
     border: #eaeae2;
-    width: 40em;
+    width: 35vw;
 }
 input:focus{
     outline: none;
@@ -292,19 +300,22 @@ footer .footer-nav ul li{
 }
 
 
-@media only screen and (min-width:769px) and (max-width:1024px){
+@media only screen and ((min-width:769px) and (max-width:1024px)){
     .banner{
         margin: 1em 4em;
     }
     .bold-p {
         margin-top: 1.5em;
     }  
+  
     .img-green {
         gap: 4em;
     }
     
     .img-green .img-green-right {
-        padding-left: 350px;
+        /* padding-left: 450px; */
+        right: 200px;
+        left: 400px;
     }
     
     .img-green .div-green-left {
@@ -316,8 +327,22 @@ footer .footer-nav ul li{
     .video .video2 {
         width: 40em;
     }
+    .img-violet {
+        column-gap: 4em;
+        row-gap: 1em;
+        margin-left: 4em;
+        grid-template-rows: 20fr 20fr;
+    }
+    .img-violet .img-left {
+        width: 30vw;
+        height: 60vh;
+    }
+    .img-violet .img-right {
+        width: 60vw;
+        height: 90vh;
+    }
     .img-blue{
-        margin: 4em;
+        margin-left: 4em;
     }
     .img-blue .div-blue {
         width: 350px;
@@ -384,9 +409,157 @@ footer .footer-nav ul li{
         padding: 10px;
     }
 }
-/*320px — 480px: Mobile devices 
-481px — 768px: iPads, Tablets 
-769px — 1024px: Small screens, laptops 
-1025px — 1200px: Desktops, large screens
-1201px and more — Extra large screens,
-*/
+@media only screen and (max-width: 768px)
+{
+    .banner {
+            margin: 1em 2em;
+    }
+    .bold-p {
+           margin-top: 1em;
+    }
+    .texts article {
+        padding: 20px 100px;
+        margin-bottom: 0px;
+    }
+    
+    .texts article p {
+             font-size: 1em;
+    }
+    
+    .texts article .bold-p {
+        margin-top: 0.5em;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    .img-yellow {
+        grid-template-columns: 50fr 50fr 50fr;
+    }
+    .img-yellow .div-right {
+        background-color: #fbffa7;
+        padding: 150px 0px 150px 150px;
+        grid-area: 1/2/1/4;
+    }
+  
+    .video .video1 {
+        width: 30em;
+        height: 20em;
+    }
+    .video .video2 {
+        width: 30em;
+        height: 20em;
+    }
+    .img-green {
+        display: flex;
+    }
+    
+    .img-green .img-green-right {
+        object-fit: cover;
+        height: 180vh;
+        width: 50vw;
+        position: absolute;
+        left: 300px;
+        }
+    
+    .img-green .div-green-left {
+        gap: 1em;
+    }
+    .img-green .div-green-left .img-green-left-2 {
+        width: 30vw;
+        height: 60vh;
+    }
+    .img-green .div-green-left .img-green-left {
+        width: 30vw;
+        height: 60vh;
+    }
+    .img-violet {
+        column-gap: 1em;
+        row-gap: 1em;
+        margin-left: 1em;
+        grid-template-rows: 20fr 20fr;
+    }
+    
+    .img-violet .img-left {
+        width: 35vw;
+        height: 80vh;
+        margin-left: 1em;
+    }
+    
+    .img-violet .img-right {
+        width: 50vw;
+        height: 110vh;
+    }
+    .img-blue {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 50fr;
+    }
+    
+    .img-blue .div-blue {
+        width: 50vw;
+        height: 350vh;
+    }
+    
+    .img-blue .div-blue p {
+        font-size: 1.1em;
+        padding: 20px 40px;
+        margin: 0px;
+    }
+    
+    .img-blue .img-left {
+        width: 50vw;
+        height: 350vh;
+        margin-left: 1em;
+    }
+    footer {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(8, auto);
+        margin: 1em;
+    }
+    
+    footer h1 {
+        grid-area: 1/1/2/1;
+    }
+    
+    footer .newsletter {
+        padding: 5px 2px;
+        grid-area: 2/1/3/1;
+    
+    }
+    footer .newsletter form input[type=text]{
+        width: 50vw;
+    }
+    
+    footer .register {
+        grid-area: 3/1/4/1;
+    }
+    
+    footer .education {
+        grid-area: 4/1/5/1;
+    }
+    
+    footer .community {
+        grid-area: 5/1/6/1;
+    }
+    
+    footer .distributors {
+        grid-area: 6/1/7/1;
+    }
+    
+    footer .lan {
+        grid-area: 7/1/8/1;
+    }
+    
+    footer .footer-nav {
+        grid-area: 8/1/9/1;
+        flex-direction: column;
+    }
+    
+    footer .footer-nav ul li {
+        display: block;
+        padding: 10px;
+    }
+    
+    footer .footer-nav p {
+        padding: 10px;
+    }
+}
