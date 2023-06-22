@@ -2,8 +2,8 @@
 toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
-    document.getElementById("nav-left").style.margin = "0px 0px 300px 0px";
-    document.getElementById("nav-right").style.margin = "0px 0px 300px 0px";
+    document.getElementById("nav-left").style.margin = "0px 0px 350px 0px";
+    document.getElementById("nav-right").style.margin = "0px 0px 350px 0px";
     
 }
 

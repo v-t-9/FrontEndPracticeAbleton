@@ -41,22 +41,25 @@ body{
     /* z-index: 1;  */
     top: 45px;
     left: 1px;
-    height: 300px;
+    height: 350px;
 }
 .nav-body .nav-left .dropdown .dropdown-content h3 {
     text-align: left;
     margin: 2em 6em 2em 6em;
+    font-size: 18px;
 }
 
 .nav-body .nav-left .dropdown .dropdown-content #more-on{
     display: flex;
     justify-content: space-between;
     margin: 0em 6em 0em 6em;
+    font-size: 16px;
 }
 .nav-body .nav-left .dropdown .dropdown-content #more-from {
     display: flex;
     justify-content: space-between;
     margin: 0em 6em 0em 6em;
+    font-size: 16px;
 }
 
 .nav-body .nav-left .dropdown .dropdown-content a {
@@ -70,6 +73,7 @@ body{
 
 .nav-body .nav-left .dropdown .show {
     display: block;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #logo {
@@ -81,14 +85,19 @@ body{
     font-weight: bold;
     padding: 25px 10px;
 }
-.nav-body .orange{
+.nav-body .nav-left .dropdown .dropbtn .orange{
     color: #ff764d;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
 }
 .nav-body .blue {
     color: #0000FF;
 }
 .nav-body .nav-right{
     margin-right: 16px;
+}
+.nav-body .nav-right a {
+    text-decoration: none;
 }
 main .nav-main ul li {
     display: inline;
