@@ -120,6 +120,7 @@ main .nav-main ul li a {
     grid-area: 1/1/1/1;
     justify-self: center;
     align-self: center;
+    font-weight: bold;
 }
 .banner img{
     object-fit: cover;
