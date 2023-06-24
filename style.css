@@ -14,10 +14,13 @@ body{
 .nav-body .nav-left{
     padding: 0;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .nav-body .nav-left a {
-    float: left;  
-    text-align: center;
+    /* float: left;   */
+    /* text-align: center; */
     padding: 14px 16px;
     text-decoration: none;
 }
