@@ -1,3 +1,6 @@
+*{
+    font-size: 1em;
+}
 body{
     color: #100c0c;
     background-color: #fafaea;
@@ -8,8 +11,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-bottom: 1px solid #d5b3ff; */
-    
+  
 }
 .nav-body .nav-left{
     padding: 0;
@@ -25,7 +27,6 @@ body{
     text-decoration: none;
 }
 .nav-body .nav-left .dropdown {
-    /* float: left;   */
     overflow: hidden; 
     
 }
@@ -41,28 +42,26 @@ body{
     position: absolute;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    /* z-index: 1;  */
-    top: 45px;
+    top: 4em;
     left: 1px;
-    height: 350px;
+    height: 30em;
 }
 .nav-body .nav-left .dropdown .dropdown-content h3 {
     text-align: left;
     margin: 2em 6em 2em 6em;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .nav-body .nav-left .dropdown .dropdown-content #more-on{
     display: flex;
     justify-content: space-between;
     margin: 0em 6em 0em 6em;
-    font-size: 16px;
+    
 }
 .nav-body .nav-left .dropdown .dropdown-content #more-from {
     display: flex;
     justify-content: space-between;
     margin: 0em 6em 0em 6em;
-    font-size: 16px;
 }
 
 .nav-body .nav-left .dropdown .dropdown-content a {
@@ -90,14 +89,13 @@ body{
 }
 .nav-body .nav-left .dropdown .dropbtn .orange{
     color: #ff764d;
-    font-size: 16px;
     font-family: 'Open Sans', sans-serif;
 }
 .nav-body .blue {
     color: #0000FF;
 }
 .nav-body .nav-right{
-    margin-right: 16px;
+    margin-right: 1em;
 }
 .nav-body .nav-right a {
     text-decoration: none;
@@ -122,9 +120,6 @@ main .nav-main ul li a {
     grid-template-columns: auto;
     grid-template-rows: auto;
     margin: 1em 6em;
-    /*justify-content: center;
-        align-items: center;
-        justify-items: center;*/
 }
 .banner h1{
     color: #ff764d;
@@ -385,7 +380,7 @@ footer .footer-nav #footer-name-logo span {
     }
     
     .img-green .img-green-right {
-        /* padding-left: 450px; */
+       
         right: 200px;
         left: 400px;
     }
