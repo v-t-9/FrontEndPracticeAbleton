@@ -1,18 +1,22 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    document.getElementById("nav-left").style.margin = "0em 0em 30em 0em";
-    document.getElementById("nav-right").style.margin = "0em 0em 30em 0em";
-    
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+console.log("coll", coll);
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (e) {
-    if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('.show')) {
-            myDropdown.classList.remove('.show');
-        }
-    }
-}
+
+
+
+
+//https://www.w3schools.com/howto/howto_js_collapsible.asp
