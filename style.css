@@ -169,7 +169,7 @@ main .nav-main ul li a {
     width:43.75em; 
     height:31.25em;
 }
-.video .video2{
+.video .pink_flowers{
     width:62.5em; 
     height:37.5em;
 }
@@ -269,6 +269,9 @@ main .nav-main ul li a {
    padding:60px 130px;
    align-self: center;
 }
+.img-blue .div-blue p span{
+    color:#0000FF
+}
 .img-blue .img-left {
     object-fit: cover;
     width: 37.5em;
@@ -288,6 +291,61 @@ footer h1{
 }
 footer .register{
     grid-area: 2/1/2/2;
+}
+footer .register .social-media{
+    display: flex;
+    justify-content: start;
+}
+footer .register .social-media .facebook-class {
+    display: flex;
+    height: max-content;
+    width: 2em;
+    background-color: #4267B2;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .register .social-media .facebook-class #facebook {
+    color: #fafaea;
+    font-size: 1.5em;
+}
+footer .register .social-media .twitter-class{
+    display: flex;
+    height: max-content;
+    width: 2em;
+    background-color: #26a7de;
+    align-items: center;
+    justify-content: center;
+}
+footer .register .social-media .twitter-class #twitter {
+    color: #fafaea;
+    font-size: 1.5em;
+}
+footer .register .social-media .youtube-class {
+    display: flex;
+    height: max-content;
+    width: 2em;
+    background-color: #FF0000;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .register .social-media .youtube-class #youtube {
+    color: #fafaea;
+    font-size: 1.5em;
+}
+footer .register .social-media .instagram-class {
+    display: flex;
+    height: max-content;
+    width: 2em;
+    background-color: #f8a853;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .register .social-media .instagram-class #instagram {
+    color: #fafaea;
+    font-size: 1.5em;
 }
 footer .education{
     grid-area: 2/2/2/3;
